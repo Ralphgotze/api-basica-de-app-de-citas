@@ -1,0 +1,21 @@
+{
+  "name": "usuarios_login",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "ralph",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "http": "^0.0.1-security",
+    "mysql2": "^3.14.0",
+    "nodemon": "^3.1.9",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
+  }
+}

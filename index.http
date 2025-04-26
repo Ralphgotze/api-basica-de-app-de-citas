@@ -1,0 +1,44 @@
+POST http://localhost:3000/usuarios/register
+Content-Type: application/json
+
+{
+    "id":"1",
+    "nombre": "Andre",
+    "contraseña": "onana",
+    "is_login":"1"
+}
+
+###
+POST http://localhost:3000/usuarios/login
+Content-Type: application/json
+
+{
+    "nombre": "Andre",
+    "contraseña": "onana"
+}
+
+###
+POST http://localhost:3000/chat/2
+Content-Type: application/json
+
+{
+    "usuario_id": 1,
+    "mensaje": "hola"
+}
+
+
+###
+GET http://localhost:3000/likes/friends?usuario_id=1
+
+###
+POST http://localhost:3000/likes/send
+Content-Type: application/json
+
+{
+    "usuario_id": 1,
+    "liked_usuario_id": 3
+}
+
+
+###
+GET http://localhost:3000/chat?receiver_id=3&id=1
